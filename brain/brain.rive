@@ -1,15 +1,11 @@
 ! version = 2.0
 
 + hello
-- Hello, what is your name?
+- hello, welcome to your new farm. Have you though of a name for it.
 
-+ _
-% hello what is your name
-- Nice to meet you <formal>!
-
-+ my name is *
-- Nice to meet you <star>
-- Nice meeting you <star>
++ i would like to name it *
+- moo, <star>, what a nice name.
+-  <star>, how... peculiar
 
 + thank you
 - You are welcome
