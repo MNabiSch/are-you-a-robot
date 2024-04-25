@@ -1,20 +1,18 @@
 ! version = 2.0
 
 + hello
-- hello, welcome to your new farm. Have you though of a name for it.
+- what is your username
 
-+ i would like to name it *
-- moo, <star>, what a nice name.
--  <star>, how... peculiar
++ my username is *
+- <set username=<star>> is the username <get username> correct.
 
-+ thank you
-- You are welcome
-- Welcome
-- No problem
-- No worries!
++ yes
+- Thank you , now enter your password
+- Welcome, enter your password
+- Welcome to windows 65, enter your password
 
 + *
-- Sorry did not get what you said
-- I am afraid that I can not understand you
-- Sorry can you please elaborate that for me
-- I don't get it!
+- <set incorrectpassword=<star2>> Password you entered was wrong, input again. Type 'my password is'
+
++ my password is *
+- <set password=<star3>> Correct password.
