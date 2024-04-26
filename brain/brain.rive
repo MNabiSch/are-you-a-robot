@@ -1,21 +1,29 @@
 ! version = 2.0
 
+// Introduction to the bot. Input User and Pass.
 + hello
 - what is your username
 
 + my username is *
-- <set username=<star>> is the username <get username> correct.
+- <set username=<formal>> is the username <get username> correct.
 
 + yes
-- Thank you , now enter your password
-- Welcome, enter your password
-- Welcome to windows 65, enter your password
+- Thank you \n Now enter your password
+- Welcome, <get username> Please enter your password
 
-+ *
-- <set incorrectpassword=<star2>> Password you entered was wrong, input again. Type 'my password is'
+//+ *
+//- <set incorrectpassword=<star2>> Password you entered was wrong, input again. Type 'my password is'
 
 + my password is *
-- <set password=<star3>> Correct password. Welcome to windows 65.
+- <set password=<star>> Correct password. Welcome to windows 65. 
 
-+ %
-- System computer is at risk of being infected by a virus. Would you like to proceed with scan?
+// System warning
+
++ *
+- System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
+
++ allow
+- Scanning for virus
+
++ dont allow
+- Are you sure? Files on your computer have been flagged as corrupted. I strongly reccomend you press allow
