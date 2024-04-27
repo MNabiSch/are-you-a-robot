@@ -4,26 +4,56 @@
 + hello
 - what is your username
 
-+ my username is *
++ *
+% what is your username
 - <set username=<formal>> is the username <get username> correct.
+    <set username_confirmed=yes>
 
 + yes
-- Thank you \n Now enter your password
-- Welcome, <get username> Please enter your password
-
-//+ *
-//- <set incorrectpassword=<star2>> Password you entered was wrong, input again. Type 'my password is'
-
-+ my password is *
-- <set password=<star>> Correct password. Welcome to windows 65. 
-
-// System warning
+    <get username_confirmed=yes> == yes =>
+- Please enter your password.
 
 + *
-- System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
+% please enter your password
+- Correct password. \n Welcome to windows 65. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
 
-+ allow
-- Scanning for virus
++ no
+<get username_confirmed+yes> == no =>
+- Enter your username
+
++ *
+% enter your username
+<set username_confirmed=yes>
+- <set usernamecorrect=<formal>> is the username <get usernamecorrect> correct.
+- Thank you \n Now enter your password
+- Please enter your password below
+
++ *
+% welcome | thank you
+<get username_confirmed=yes> == yes =>
+- <set password=<formal>> Correct password. Welcome to windows 65. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
 
 + dont allow
-- Are you sure? Files on your computer have been flagged as corrupted. I strongly reccomend you press allow
+- <set scan=dontallow>
+- Computer will shut down and reboot, type "Allow" to continue.
+
++ allow
+- <set scan=Allow>Scan commencing... Say stop scan to pause process.
+
++ *
+% scan commencing
+- Scan Complete.
+
+
++ *
+- Error...
+- SSsscannninng
+
+
+// Reboot Instructions
++ [*] reboot [*]
+- Click the reboot button.
+
+ // if the user enters stop
++ [*] stop [*]
+- Scan failed. Reboot system

@@ -23,7 +23,6 @@ function botReply(message) {
 
 function selfReply(message) {
   message_container.innerHTML += `<div class="self">${message}</div>`;
-
   bot
     .reply("local-user", message)
     .then(function (reply) {
@@ -40,4 +39,11 @@ function botReady() {
 
 function botNotReady(err) {
   console.log("An error has occurred.", err);
+}
+
+function refreshPage() {
+  // Reload the page
+  window.location.reload();
+  // Scroll to the top of the page
+  window.scrollTo(0, 0);
 }
