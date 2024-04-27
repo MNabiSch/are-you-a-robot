@@ -38,13 +38,47 @@
 - Computer will shut down and reboot, type "Allow" to continue.
 
 + allow
-- <set scan=Allow>Scan commencing... Say stop scan to pause process.
+- <set scan=Allow>Scan commencing... Say stop scan to pause process. {topic=stop}
+
+> topic stop
+     // if the user enters stop
+    + [*] stop [*]
+    - Scan failed. Reboot system {topic=reboot}
+
+    + *
+    - scan continuing {topic=random}
+< topic
 
 + *
-% scan commencing
-- Scan Complete.
+% scan continuing 
+- Scan Complete. A Virus has been detected. Would... Would.. W.W.W.W. \n Hello. Youuuuu now have a virus! Me! I am the virus. {topic=virusintro}
+
++ *
+% hello
+- Your computer has been inflitrated by 
 
 
+// if the user asks who the bot is
+> topic virusintro
+    + [*] name [*]
+    - my name is <get name>
+
+    + [*] go away [*]
+    - why would i do that? you literally gave me your details to come hangout here 
+
+    + [*] fuck off [*]
+    - woahhh calm down
+
+
+// If the user enters stop, this redirects them to reboot the computer.
+> topic reboot
+
+    + [*] reboot [*]
+    - Click the reboot button. {topic=random}
+
+< topic
+
+// if nothing aligns.
 + *
 - Error...
 - SSsscannninng
@@ -53,7 +87,4 @@
 // Reboot Instructions
 + [*] reboot [*]
 - Click the reboot button.
-
- // if the user enters stop
-+ [*] stop [*]
-- Scan failed. Reboot system
+a
