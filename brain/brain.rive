@@ -1,5 +1,7 @@
 ! version = 2.0
 
+<set botname>=
+
 // Introduction to the bot. Input User and Pass.
 + hello
 - what is your username
@@ -31,7 +33,7 @@
 + *
 % welcome | thank you
 <get username_confirmed=yes> == yes =>
-- <set password=<formal>> Correct password. Welcome to windows 65. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
+- <set password=<star1>> Correct password. Welcome to windows 65. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
 
 + dont allow
 - <set scan=dontallow>
@@ -61,13 +63,20 @@
 // if the user asks who the bot is
 > topic virusintro
     + [*] name [*]
-    - my name is <get name>
+    - my name is <bot name>
 
     + [*] go away [*]
     - why would i do that? you literally gave me your details to come hangout here 
 
     + [*] fuck off [*]
     - woahhh calm down
+
+    + *
+    - you got a virus
+    - i am a cutie little virus 
+    - i like the password : <get passowrd>. I might use it myself
+    - <get password>... why <get password>
+
 
 
 // If the user enters stop, this redirects them to reboot the computer.
