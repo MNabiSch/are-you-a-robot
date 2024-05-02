@@ -1,20 +1,25 @@
 <html>
   <head>
-    <title>💬 Are you a robot? 🤖</title>
+    <title> Windows67 </title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href=Icon.ico>
   </head>
   <body>
-    <div class="title">
-      <h1>💬 ARE YOU A ROBOT? 🤖</h1>
-    </div>
-    <div class="wrapper">
-      <div id="chat" class="chat">
-        <div id="messages" class="messages"></div>
+  </div>
+  <div class="taskbar">
+    <button onclick="openModal()">Open Chat</button>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="chat">
+        <div class="messages"></div>
         <form class="actions">
-          <input type="text" placeholder="Press ↵ to send..." />
-        </form>
-      </div>
+          <input type="text" placeholder="Press ↵ to send...">
+      </form>
     </div>
+  </div>
+  <div class="taskbar">
     <button onclick="refreshPage()" class="refresh-button">Reboot</button>
     <script
       src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"

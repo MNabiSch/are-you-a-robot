@@ -41,9 +41,17 @@ function botNotReady(err) {
   console.log("An error has occurred.", err);
 }
 
+//rebooting
 function refreshPage() {
-  // Reload the page
   window.location.reload();
-  // Scroll to the top of the page
   window.scrollTo(0, 0);
+}
+
+//open chatbot
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
 }

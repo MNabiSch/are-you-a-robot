@@ -1,6 +1,10 @@
 ! version = 2.0
 
-<set botname>=
+! bot name = Viro
+
++ [*] test [*]
+- this is a test!
+^ <span class="action"> Try typing test again </span>
 
 // Introduction to the bot. Input User and Pass.
 + hello
@@ -9,10 +13,8 @@
 + *
 % what is your username
 - <set username=<formal>> is the username <get username> correct.
-    <set username_confirmed=yes>
 
 + yes
-    <get username_confirmed=yes> == yes =>
 - Please enter your password.
 
 + *
@@ -20,19 +22,14 @@
 - Correct password. \n Welcome to windows 65. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
 
 + no
-<get username_confirmed+yes> == no =>
 - Enter your username
 
 + *
 % enter your username
-<set username_confirmed=yes>
 - <set usernamecorrect=<formal>> is the username <get usernamecorrect> correct.
-- Thank you \n Now enter your password
-- Please enter your password below
 
 + *
 % welcome | thank you
-<get username_confirmed=yes> == yes =>
 - <set password=<star1>> Correct password. Welcome to windows 65. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
 
 + dont allow
@@ -55,21 +52,23 @@
 % scan continuing 
 - Scan Complete. A Virus has been detected. Would... Would.. W.W.W.W. \n Hello. Youuuuu now have a virus! Me! I am the virus. {topic=virusintro}
 
-+ *
-% hello
-- Your computer has been inflitrated by 
-
+// + *
+//% hello
+//- Your computer has been inflitrated by 
 
 // if the user asks who the bot is
 > topic virusintro
     + [*] name [*]
-    - my name is <bot name>
+    - my name is <botname>
+    - hi im <get botname>
 
     + [*] go away [*]
     - why would i do that? you literally gave me your details to come hangout here 
 
     + [*] fuck off [*]
-    - woahhh calm down
+    - woahhh calm down {topic=sorry}
+    - be nice
+    - dont be mad at me, its not my fault
 
     + *
     - you got a virus
@@ -78,6 +77,11 @@
     - <get password>... why <get password>
 
 
+//if the user is mean and then apologises
+
+//when the user is confused
+
+//pop up virus
 
 // If the user enters stop, this redirects them to reboot the computer.
 > topic reboot
@@ -96,4 +100,3 @@
 // Reboot Instructions
 + [*] reboot [*]
 - Click the reboot button.
-a
