@@ -19,7 +19,7 @@
 
 + *
 % please enter your password
-- Correct password. \n Welcome to windows 65. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
+- Correct password. \n Welcome to orionOS. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
 
 + no
 - Enter your username
@@ -30,7 +30,7 @@
 
 + *
 % welcome | thank you
-- <set password=<star1>> Correct password. Welcome to windows 65. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
+- <set password=<star1>> Correct password. Welcome to orionOS. System is at risk of being infected by a virus. \n Would you like to proceed with scan? \n If you would like to proceed, Type Allow. If you would not like to proceed, Type Don't Allow.
 
 + dont allow
 - <set scan=dontallow>
@@ -58,9 +58,8 @@
 
 // if the user asks who the bot is
 > topic virusintro
-    + [*] name [*]
-    - my name is <botname>
-    - hi im <get botname>
+     + whats your name 
+     - thanks for asking ^○^ but i dont have one  {topic=viruschat}
 
     + [*] go away [*]
     - why would i do that? you literally gave me your details to come hangout here 
@@ -70,14 +69,40 @@
     - be nice
     - dont be mad at me, its not my fault
 
+    + please stop
+    - Nope ^-^ you invited me here 
+
+    + when 
+    - you found me on the web and now im here :0
+
     + *
     - you got a virus
     - i am a cutie little virus 
     - i like the password : <get passowrd>. I might use it myself
     - <get password>... why <get password>
 
+< topic
+
+> topic viruschat
+  
+    + why 
+    - i dont need one my purpose is to break you :D
+
+    + fuck you
+    - getting angry at a screen lol
+
+    
+
+
+
+
+< topic 
+
++ test
+- <img src="/images/errorpopup.png">
 
 //if the user is mean and then apologises
+
 
 //when the user is confused
 
