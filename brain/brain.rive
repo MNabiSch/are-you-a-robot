@@ -100,12 +100,14 @@
     - system cant compute. would you like to attempt reset again y/n
 < topic
 
-- system cant compute. would you like to attempt reset again y/n
+> topic inbetween
+     + stop
+    - system cant compute. would you like to attempt reset again y/n
+< topic 
+
+
 
 > topic mean
-    + stop
-    - system cant compute. would you like to attempt reset again y/n
-
     + y 
     - gotya (>‿◠)✌ you are stupid lol
 
@@ -120,9 +122,10 @@
     - maybe be a bit more intresting ask what id like to talk abot
 
     + what would you like to talk about
-    - Can we talk about the political and economic state of the world?
+    - how you can help me?
+    
 
-    +
+    
 
 
 
