@@ -58,8 +58,12 @@
 
 // if the user asks who the bot is
 > topic virusintro
-     + whats your name 
-     - thanks for asking ^○^ but i dont have one  {topic=viruschat}
+    + hello
+    - god what have you been searching ≧◡≦
+    - just looked at your photos your family look nice
+     
+    + whats your name 
+    - thanks for asking ^○^ but i dont have one  
 
     + [*] go away [*]
     - why would i do that? you literally gave me your details to come hangout here 
@@ -72,6 +76,9 @@
     + please stop
     - Nope ^-^ you invited me here 
 
+    + stop
+    - Nope ^-^ you invited me here 
+    
     + when 
     - you found me on the web and now im here :0
 
@@ -81,9 +88,7 @@
     - i like the password : <get passowrd>. I might use it myself
     - <get password>... why <get password>
 
-< topic
-
-> topic viruschat
+    > topic viruschat
   
     + why 
     - i dont need one my purpose is to break you :D
@@ -91,12 +96,49 @@
     + fuck you
     - getting angry at a screen lol
 
+    + *
+    - system cant compute. would you like to attempt reset again y/n
+< topic
+
+- system cant compute. would you like to attempt reset again y/n
+
+> topic mean
+    + stop
+    - system cant compute. would you like to attempt reset again y/n
+
+    + y 
+    - gotya (>‿◠)✌ you are stupid lol
+
+    + im not
+    - oh boy you are ! rember you downloaded me
+
+    + when 
+    - huh you cant rember ┏(-_-)┛ you found me on the web 
+    - when you werent careful on the web
+
+    + ok
+    - maybe be a bit more intresting ask what id like to talk abot
+
+    + what would you like to talk about
+    - Can we talk about the political and economic state of the world?
+
+    +
+
+
+
+
+  
+    
     
 
 
 
 
 < topic 
+
+> topic nice
+    + n
+    - guess ill stick around then :) 
 
 + test
 - <img src="/images/errorpopup.png">
