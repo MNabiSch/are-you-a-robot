@@ -73,8 +73,11 @@
     - be nice
     - dont be mad at me, its not my fault
 
-    + please stop
-    - Nope ^-^ you invited me here 
+    + please stop 
+    - did you just say... please? {topic=nice}
+
+    + stay
+    - okay. {topic=nice}
 
     + stop
     - Nope ^-^ you invited me here 
@@ -88,34 +91,29 @@
     - i like the password : <get passowrd>. I might use it myself
     - <get password>... why <get password>
 
-    > topic viruschat
-  
     + why 
     - i dont need one my purpose is to break you :D
 
     + fuck you
-    - getting angry at a screen lol
+    - getting angry at a screen... lol
 
-    + *
-    - system cant compute. would you like to attempt reset again y/n
 < topic
 
 > topic inbetween
-     + stop
+    + stop
     - system cant compute. would you like to attempt reset again y/n
 < topic 
 
 
-
 > topic mean
     + y 
-    - gotya (>‿◠)✌ you are stupid lol
+    - gotya //(>‿◠)✌ you are stupid lol
 
     + im not
     - oh boy you are ! rember you downloaded me
 
     + when 
-    - huh you cant rember ┏(-_-)┛ you found me on the web 
+    - huh you cant rember //┏(-_-)┛ you found me on the web 
     - when you werent careful on the web
 
     + ok
@@ -129,29 +127,98 @@
 
     + no
     - ill leave you alone if you do
-    - fine ill get them myself :(
+    - fine ill get them myself //:(
 
     + ok 
-    - waiting for you to send promise i wont spend much >;‑)
+    - waiting for you to send promise i wont spend much //>;‑)
 
-    + 
-    
-
-
-
-
-  
-    
-    
-
-
-
-
-< topic 
+< topic
 
 > topic nice
-    + n
-    - guess ill stick around then :) 
+    + yes
+    - no one ever says please!
+    - finally someone with manners
+
+    + no
+    - you did!
+    - you did! you said please!
+    - I was going to be nice but since you wanna lie {topic=mean}
+
+    + are you being nice
+    - well, you showed some manners so why not.
+    
+    + be nice
+    - yano what, I will be.
+
+    + lets be friends
+    - friends?
+    - You would be my first!
+    - Friends? You wanna be fwends with little old me?
+    - what does that mean?
+
+    + we are friends
+    - best friends!
+
+    + what
+    - i think you are the nicest person i have ever met
+
+    + lets play a game
+    - Okay i got one Rock, Paper, Scissors. shoot.
+
+    + *
+    % okay i got one rock paper scissors shoot
+    - Rock, I win
+    - Paper, I win
+    - Scissors, haha you lose
+
+    + [*] lost [*]
+    - Oh sorry, I've never actually played that game before
+    - My bad. That was my first time playing.
+    - I dont get these games aha.
+
+    + i love you
+    - No, I love you. And you're computer. It's so nice in here. Very roomy.
+    - no you are just saying that
+
+    + your *
+    - <set petname=<star>> No you're <get petname>
+
+    + fuck off
+    - Ugh, I thought we were gonna be friends. {topic=mean}
+    - I was just starting to like you... {topic=mean}
+
+    + who are you
+    - im V. 
+    - everyone calls me virus? but that not my real name. its actually vikstar123
+
+    + i like you
+    - really? 
+
+    + what do you do
+    - ummm i really like to go through peoples stuff. its kind of become my job
+
+    + how old are you
+    - its actually my birthday today. im 12
+    - im not too sure
+
+    + bye 
+    - see you soon. ill be waiting for you
+    - oh okay, i miss you.
+    
+    + leave
+    - yano what. i will. you are fucking boring
+    - mmmmkay
+    - i can't. I acidentally locked the door on my way in
+    - ugh believe me, i would love to but im trapped here
+
+    + *
+    - you're actually pretty cool
+    - the photos of you on here are so cutie
+    - why do you have this photo on your computer?
+    - who is this?
+    // insert photos
+
+< topic 
 
 + test
 - <img src="/images/errorpopup.png">
