@@ -171,6 +171,11 @@
     - Paper, I win
     - Scissors, haha you lose
 
+    + [*] drew [*]
+    - Oh sorry, I've never actually played that game before
+    - My bad. That was my first time playing.
+    - I dont get these games aha.
+
     + [*] lost [*]
     - Oh sorry, I've never actually played that game before
     - My bad. That was my first time playing.
@@ -223,14 +228,6 @@
 + test
 - <img src="/images/errorpopup.png">
 
-//if the user is mean and then apologises
-
-
-//when the user is confused
-
-//pop up virus
-
-// If the user enters stop, this redirects them to reboot the computer.
 > topic reboot
 
     + [*] reboot [*]
